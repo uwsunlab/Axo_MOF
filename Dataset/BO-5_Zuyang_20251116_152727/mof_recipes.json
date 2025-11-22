@@ -1,0 +1,18 @@
+{
+  "A2": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 2.0
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 2.7
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 3.3
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  }
+}

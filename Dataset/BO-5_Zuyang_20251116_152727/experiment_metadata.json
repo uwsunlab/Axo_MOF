@@ -1,0 +1,13 @@
+{
+  "experiment_id": "BO-5_Zuyang_20251116_152727",
+  "experiment_name": "BO-5",
+  "operator_name": "Zuyang",
+  "target_compound": "MOF",
+  "project_id": null,
+  "sample_type": "MOF_synthesis",
+  "solvent": "triethylamine/methanol",
+  "temperature_c": 25,
+  "notes": "synthesize 1 vials",
+  "created_at": "2025-11-16T15:27:27.552172",
+  "instrument_serial": 2
+}
