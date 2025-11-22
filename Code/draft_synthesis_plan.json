@@ -1,0 +1,31 @@
+{
+    
+    "slot2": {
+        "A2": {
+            "metal_precursor_vol" : 1.9 ,
+            "organic_precursor_vol" : 2.8 ,
+            "solvent_vol" : 3.3
+        },
+        "B2": {
+            "metal_precursor_vol" : 0.7 ,
+            "organic_precursor_vol" : 2.9 ,
+            "solvent_vol" : 4.4
+        }
+    },  
+
+    "spectrum_record_interval_mins" :5 ,  
+    "max_spectrum_records" : 13,
+
+    "Experiment" : { 
+            "operator_name" : "Zuyang" , 
+            "experiment_name" : "BO-6", 
+            "experiment_date" : "21th November 2025", 
+            "experiment_time" : "16:20", 
+            "experiment_description" : "Synthesis of 2 vials of MOF", 
+            "approximate_time": "1.5 hours", 
+            "metal_precursor_name": "Co+2", 
+            "organic_precursor_name": "2-methylimidazole", 
+            "solvent_name": "triethylamine/methanol"
+    }
+
+}
