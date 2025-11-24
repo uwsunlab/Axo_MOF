@@ -316,25 +316,6 @@ Axo_MOF/
 
 ## 🧪 Testing
 
-### Without Hardware
-
-The project includes tests that validate logic without requiring hardware:
-
-```bash
-cd Code
-
-# Basic validation (phase configuration, manager logic)
-python test_phase_basic.py
-
-# CLI argument parsing
-python test_cli_args.py
-
-# Full orchestrator with mock hardware (requires scipy, scikit-learn)
-python test_orchestrator_mock.py
-```
-
-### With Hardware
-
 1. **Dry run** (test communication, no synthesis):
    ```bash
    python run_bo_optimization.py --new --phases single --batch-size 1 --max-iterations 1
