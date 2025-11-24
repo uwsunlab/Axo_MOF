@@ -297,7 +297,6 @@ Axo_MOF/
 │       ├── {vial}_{time}min.npy        # Spectral data
 │       └── {vial}_{time}min.png
 │
-├── TESTING_WITHOUT_HARDWARE.md         # Testing guide
 └── README.md                           # This file
 ```
 
@@ -307,7 +306,6 @@ Axo_MOF/
 
 ### For Users
 - **[Quick Start Notebook](Code/multi_phase_bo_orchestration.ipynb)**: Interactive guide for running experiments
-- **[TESTING_WITHOUT_HARDWARE.md](Code/TESTING_WITHOUT_HARDWARE.md)**: Testing without hardware access
 
 ### Example Notebooks
 - **[mof_synthesis.ipynb](Code/mof_synthesis.ipynb)**: Manual synthesis workflows and calibration
@@ -353,4 +351,4 @@ python test_orchestrator_mock.py
    python run_bo_optimization.py --new --approval-mode manual
    ```
 
-See [TESTING_WITHOUT_HARDWARE.md](Code/TESTING_WITHOUT_HARDWARE.md) for detailed testing procedures.
+
