@@ -287,10 +287,7 @@ Axo_MOF/
 │   ├── multi_phase_bo_orchestration.ipynb  # Interactive notebook
 │   ├── mof_synthesis.ipynb             # Manual synthesis workflows
 │   ├── bayesian optimisation.ipynb     # BO analysis & visualization
-│   ├── test_phase_basic.py             # Unit tests (no hardware)
-│   ├── test_cli_args.py                # CLI argument tests
-│   └── test_orchestrator_mock.py       # Mock hardware tests
-│
+|
 ├── Dataset/                            # Experimental data
 │   └── {experiment_name}_{timestamp}/
 │       ├── operations_log.txt
