@@ -54,22 +54,22 @@ The platform is organized into **four main abstraction layers**:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Experiment Layer                          │
+│                    Experiment Layer                         │
 │  High-level workflows, BO orchestration, yield extraction   │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                  Deck & Labware Layer                        │
+│                  Deck & Labware Layer                       │
 │     Spatial management, well positions, volume tracking     │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                      Tool Layer                              │
-│   Single Syringe, Dual Syringe, Spectrometer, Gripper      │
+│                      Tool Layer                             │
+│   Single Syringe, Dual Syringe, Spectrometer, Gripper       │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                    Machine Layer                             │
+│                    Machine Layer                            │
 │    G-code execution, motion control, hardware interface     │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -188,8 +188,8 @@ The notebook provides:
 
 The system runs through **two optimization phases**:
 
-| Phase | Goal | Batch Size | Measurement Inteval (min) | Exploration (xi) | 
-|-------|------|------------|---------------------------|------------------|
+| Phase | Goal | Batch Size | Measurement Interval (min) | Exploration (xi) | 
+|-------|------|------------|----------------------------|------------------|
 | **Exploration** | Broad screening | 5 | 15 | 0.01 | 
 | **Refinement** | Focused optimization | 2 | 5 | 0.01 | 
 
