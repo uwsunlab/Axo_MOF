@@ -1,16 +1,16 @@
-# Axo_MOF: Autonomous Multi-Phase Bayesian Optimization for MOF Synthesis
+# Axo_MOF: Autonomous Self-Adaptive Bayesian Optimization for MOF Synthesis
 
 > **An automated Metal-Organic Framework (MOF) synthesis and optimization platform combining robotics, spectroscopy, and machine learning for autonomous materials discovery**
 
-Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis spectroscopy, and intelligent experiment planning through multi-phase Bayesian optimization.
+Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis spectroscopy, and intelligent experiment planning through self-adaptive Bayesian optimization.
 
 ---
 
 ## 🌟 Key Features
 
-### Multi-Phase Bayesian Optimization
-- **3-phase progressive optimization**: Exploration → Refinement → Validation
-- **Adaptive batch sizing**: Large batches (10) for exploration, small batches (2) for validation
+### Self-Adaptive Bayesian Optimization
+- **2-phase progressive optimization**: Exploration → Refinement
+- **Adaptive batch sizing**: Large batches (5) for exploration, small batches (2) for refinement
 - **Dynamic search space**: Automatically narrows to promising regions
 - **Flexible approval modes**: Manual (interactive) or automatic (fully autonomous)
 - **State persistence**: Resume interrupted runs from checkpoints
@@ -18,7 +18,7 @@ Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis s
 ### Automated Synthesis & Characterization
 - **Robotic liquid handling**: Precise dispensing with single/dual syringe systems
 - **Real-time monitoring**: In-situ UV-Vis spectroscopy during synthesis
-- **Autonomous mixing**: Automated stirring and reaction control
+- **Autonomous mixing**: Automated mixing and reaction control
 - **Multi-vial workflows**: Parallel synthesis of up to 20 samples
 
 ### Intelligent Data Analysis
@@ -184,21 +184,19 @@ The notebook provides:
 
 ## 📖 Usage
 
-### Multi-Phase Bayesian Optimization
+### Self-Adaptive Bayesian Optimization
 
-The system runs through **three optimization phases**:
+The system runs through **two optimization phases**:
 
-| Phase | Goal | Batch Size | Exploration (xi) | Iterations |
-|-------|------|------------|------------------|------------|
-| **Exploration** | Broad screening | 10 | 0.05 (high) | 3-5 |
-| **Refinement** | Focused optimization | 5 | 0.01 (medium) | 5-10 |
-| **Validation** | Fine-tuning | 2 | 0.001 (low) | 2-5 |
+| Phase | Goal | Batch Size | Measurement Inteval (min) | Exploration (xi) | 
+|-------|------|------------|---------------------------|------------------|
+| **Exploration** | Broad screening | 5 | 15 | 0.01 | 
+| **Refinement** | Focused optimization | 2 | 5 | 0.01 | 
 
 **Phase Transition Criteria:**
-- Minimum iterations reached
-- Maximum iterations reached (hard limit)
 - Performance threshold met (yield > threshold)
-- Expected Improvement converged
+- Expected improvement converged
+- Best k_n observed converged
 
 ### Command-Line Arguments
 
@@ -236,11 +234,10 @@ python run_bo_optimization.py --new --approval-mode manual --operator "Alice"
 # 3. Run automated synthesis + spectroscopy
 # 4. Extract yields using Gualtieri fitting
 # 5. Update GP model
-# 6. Enter exploration phase (10 vials × ~5 iterations)
+# 6. Enter exploration phase (5 vials)
 # 7. Prompt for approval when criteria met
-# 8. Transition to refinement phase (5 vials × ~10 iterations)
-# 9. Transition to validation phase (2 vials × ~5 iterations)
-# 10. Converge and report optimal conditions
+# 8. Transition to refinement phase (2 vials)
+# 9. Converge and report optimal conditions
 ```
 
 ### Jupyter Notebook Workflow
