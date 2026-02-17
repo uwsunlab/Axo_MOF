@@ -1,0 +1,82 @@
+{
+  "B1": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 1.3
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 4.1
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 2.6
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "B2": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 0.2
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 4.2
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 3.6
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "B3": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 3.2
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 1.6
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 3.2
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "B4": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 4.7
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 2.2
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 1.1
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  },
+  "B5": {
+    "metal_precursor": {
+      "name": "Co+2",
+      "volume_ml": 4.4
+    },
+    "organic_precursor": {
+      "name": "2-methylimidazole",
+      "volume_ml": 0.8
+    },
+    "solvent": {
+      "name": "triethylamine/methanol",
+      "volume_ml": 2.8
+    },
+    "total_volume_ml": 8.0,
+    "notes": "slot2"
+  }
+}

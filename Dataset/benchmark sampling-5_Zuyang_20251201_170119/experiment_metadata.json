@@ -1,0 +1,13 @@
+{
+  "experiment_id": "benchmark sampling-5_Zuyang_20251201_170119",
+  "experiment_name": "benchmark sampling-5",
+  "operator_name": "Zuyang",
+  "target_compound": "MOF",
+  "project_id": null,
+  "sample_type": "MOF_synthesis",
+  "solvent": "triethylamine/methanol",
+  "temperature_c": 25,
+  "notes": "synthesize 5 vials",
+  "created_at": "2025-12-01T17:01:19.686215",
+  "instrument_serial": 2
+}

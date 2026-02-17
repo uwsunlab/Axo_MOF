@@ -1,0 +1,240 @@
+[2025-12-02 16:04:39] Picked Up Spectrometer
+[2025-12-02 16:04:39] Configured Spectrometer
+[2025-12-02 16:04:48] Positioned Probe to collect the dark reference spectrum. 
+Kindly switch off the probe light
+[2025-12-02 16:05:04] Recording dark reference spectrum
+[2025-12-02 16:05:10] Kindly switch on the probe light
+[2025-12-02 16:05:19] Recording white reference spectrum
+[2025-12-02 16:05:34] Parked Spectrometer
+[2025-12-02 16:05:43] Picked Up Single Syringe
+[2025-12-02 16:07:20] Vial A4 on Slot 2 filled with 3.1 ml solvent
+[2025-12-02 16:07:20] Sleep for 3 seconds to let the drops fall off
+[2025-12-02 16:07:36] Vial B4 on Slot 2 filled with 4.4 ml solvent
+[2025-12-02 16:07:36] Sleep for 3 seconds to let the drops fall off
+[2025-12-02 16:07:52] Single Syringe reset and position: -0.0
+[2025-12-02 16:08:01] Parked Single Syringe
+[2025-12-02 16:08:13] Picked Up Dual Syringe
+[2025-12-02 16:09:48] Sleeping for 3 seconds to let the drops fall off
+[2025-12-02 16:09:51] Vial A4 on Slot 2 filled with 2.2 ml metal precursor 
+[2025-12-02 16:10:04] Sleeping for 3 seconds to let the drops fall off
+[2025-12-02 16:10:07] Vial B4 on Slot 2 filled with 1.3 ml metal precursor 
+[2025-12-02 16:11:42] Sleeping for 3 seconds to let the drops fall off
+[2025-12-02 16:11:45] Vial A4 on Slot 2 filled with 2.2 ml metal precursor and 2.7 ml organic precursor
+[2025-12-02 16:11:55] Parked Dual Syringe
+[2025-12-02 16:12:05] Picked Up Single Syringe
+[2025-12-02 16:12:34] Vial A4 on Slot 2 mixed
+[2025-12-02 16:12:42] Parked Single Syringe
+[2025-12-02 16:12:52] Picked Up Spectrometer
+[2025-12-02 16:13:17] Spectrum recorded for vial A4 on Slot 2 at 0 mins
+[2025-12-02 16:13:40] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:13:49] Parked Spectrometer 
+[2025-12-02 16:14:00] Picked Up Dual Syringe
+[2025-12-02 16:14:14] Sleeping for 3 seconds to let the drops fall off
+[2025-12-02 16:14:17] Vial B4 on Slot 2 filled with 1.3 ml metal precursor and 2.3 ml organic precursor
+[2025-12-02 16:14:28] Parked Dual Syringe
+[2025-12-02 16:14:37] Picked Up Single Syringe
+[2025-12-02 16:15:06] Vial B4 on Slot 2 mixed
+[2025-12-02 16:15:14] Parked Single Syringe
+[2025-12-02 16:15:24] Picked Up Spectrometer
+[2025-12-02 16:15:49] Spectrum recorded for vial B4 on Slot 2 at 0 mins
+[2025-12-02 16:16:12] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:16:21] Parked Spectrometer 
+[2025-12-02 16:16:32] Picked Up Vacuum Gripper
+[2025-12-02 16:16:49] Put Lid to Samples
+[2025-12-02 16:17:07] Put Lid to Solvent
+[2025-12-02 16:17:15] Parked Vacuum Gripper
+[2025-12-02 16:17:26] Picked Up Dual Syringe
+[2025-12-02 16:18:11] Dual Syringe Drive 0 reset and position: 0.0
+[2025-12-02 16:18:11] Dual Syringe Drive 1 reset and position: 0.0
+[2025-12-02 16:18:24] Parked Dual Syringe
+[2025-12-02 16:18:35] Picked Up Vacuum Gripper
+[2025-12-02 16:18:56] Picked Lid from Slot 4 and Placed Lid in Slot 1
+[2025-12-02 16:19:05] Parked Vacuum Gripper
+[2025-12-02 16:19:15] Picked Up Vacuum Gripper
+[2025-12-02 16:19:37] Remove Lid From Solvent
+[2025-12-02 16:19:52] Remove Lid From Samples
+[2025-12-02 16:20:00] Parked Vacuum Gripper
+[2025-12-02 16:20:09] Picked Up Spectrometer
+[2025-12-02 16:20:36] Spectrum recorded for vial A4 on Slot 2 at 5 mins
+[2025-12-02 16:20:59] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:21:08] Parked Spectrometer 
+[2025-12-02 16:21:17] Picked Up Spectrometer
+[2025-12-02 16:21:42] Spectrum recorded for vial B4 on Slot 2 at 5 mins
+[2025-12-02 16:22:05] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:22:15] Parked Spectrometer 
+[2025-12-02 16:22:26] Picked Up Vacuum Gripper
+[2025-12-02 16:22:42] Put Lid to Samples
+[2025-12-02 16:23:00] Put Lid to Solvent
+[2025-12-02 16:23:08] Parked Vacuum Gripper
+[2025-12-02 16:24:12] Picked Up Vacuum Gripper
+[2025-12-02 16:24:35] Remove Lid From Solvent
+[2025-12-02 16:24:50] Remove Lid From Samples
+[2025-12-02 16:24:58] Parked Vacuum Gripper
+[2025-12-02 16:25:07] Picked Up Spectrometer
+[2025-12-02 16:25:34] Spectrum recorded for vial A4 on Slot 2 at 10 mins
+[2025-12-02 16:25:57] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:26:06] Parked Spectrometer 
+[2025-12-02 16:26:15] Picked Up Spectrometer
+[2025-12-02 16:26:40] Spectrum recorded for vial B4 on Slot 2 at 10 mins
+[2025-12-02 16:27:03] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:27:13] Parked Spectrometer 
+[2025-12-02 16:27:24] Picked Up Vacuum Gripper
+[2025-12-02 16:27:40] Put Lid to Samples
+[2025-12-02 16:27:58] Put Lid to Solvent
+[2025-12-02 16:28:06] Parked Vacuum Gripper
+[2025-12-02 16:29:11] Picked Up Vacuum Gripper
+[2025-12-02 16:29:33] Remove Lid From Solvent
+[2025-12-02 16:29:48] Remove Lid From Samples
+[2025-12-02 16:29:56] Parked Vacuum Gripper
+[2025-12-02 16:30:05] Picked Up Spectrometer
+[2025-12-02 16:30:32] Spectrum recorded for vial A4 on Slot 2 at 15 mins
+[2025-12-02 16:30:55] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:31:04] Parked Spectrometer 
+[2025-12-02 16:31:13] Picked Up Spectrometer
+[2025-12-02 16:31:38] Spectrum recorded for vial B4 on Slot 2 at 15 mins
+[2025-12-02 16:32:02] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:32:11] Parked Spectrometer 
+[2025-12-02 16:32:22] Picked Up Vacuum Gripper
+[2025-12-02 16:32:38] Put Lid to Samples
+[2025-12-02 16:32:56] Put Lid to Solvent
+[2025-12-02 16:33:04] Parked Vacuum Gripper
+[2025-12-02 16:34:09] Picked Up Vacuum Gripper
+[2025-12-02 16:34:31] Remove Lid From Solvent
+[2025-12-02 16:34:46] Remove Lid From Samples
+[2025-12-02 16:34:54] Parked Vacuum Gripper
+[2025-12-02 16:35:03] Picked Up Spectrometer
+[2025-12-02 16:35:31] Spectrum recorded for vial A4 on Slot 2 at 20 mins
+[2025-12-02 16:35:54] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:36:03] Parked Spectrometer 
+[2025-12-02 16:36:12] Picked Up Spectrometer
+[2025-12-02 16:36:37] Spectrum recorded for vial B4 on Slot 2 at 20 mins
+[2025-12-02 16:37:00] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:37:10] Parked Spectrometer 
+[2025-12-02 16:37:21] Picked Up Vacuum Gripper
+[2025-12-02 16:37:38] Put Lid to Samples
+[2025-12-02 16:37:55] Put Lid to Solvent
+[2025-12-02 16:38:04] Parked Vacuum Gripper
+[2025-12-02 16:39:08] Picked Up Vacuum Gripper
+[2025-12-02 16:39:30] Remove Lid From Solvent
+[2025-12-02 16:39:45] Remove Lid From Samples
+[2025-12-02 16:39:53] Parked Vacuum Gripper
+[2025-12-02 16:40:02] Picked Up Spectrometer
+[2025-12-02 16:40:29] Spectrum recorded for vial A4 on Slot 2 at 25 mins
+[2025-12-02 16:40:52] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:41:02] Parked Spectrometer 
+[2025-12-02 16:41:11] Picked Up Spectrometer
+[2025-12-02 16:41:35] Spectrum recorded for vial B4 on Slot 2 at 25 mins
+[2025-12-02 16:41:59] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:42:08] Parked Spectrometer 
+[2025-12-02 16:42:19] Picked Up Vacuum Gripper
+[2025-12-02 16:42:36] Put Lid to Samples
+[2025-12-02 16:42:53] Put Lid to Solvent
+[2025-12-02 16:43:02] Parked Vacuum Gripper
+[2025-12-02 16:44:06] Picked Up Vacuum Gripper
+[2025-12-02 16:44:28] Remove Lid From Solvent
+[2025-12-02 16:44:44] Remove Lid From Samples
+[2025-12-02 16:44:51] Parked Vacuum Gripper
+[2025-12-02 16:45:00] Picked Up Spectrometer
+[2025-12-02 16:45:27] Spectrum recorded for vial A4 on Slot 2 at 30 mins
+[2025-12-02 16:45:51] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:46:00] Parked Spectrometer 
+[2025-12-02 16:46:09] Picked Up Spectrometer
+[2025-12-02 16:46:34] Spectrum recorded for vial B4 on Slot 2 at 30 mins
+[2025-12-02 16:46:57] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:47:06] Parked Spectrometer 
+[2025-12-02 16:47:18] Picked Up Vacuum Gripper
+[2025-12-02 16:47:34] Put Lid to Samples
+[2025-12-02 16:47:52] Put Lid to Solvent
+[2025-12-02 16:48:00] Parked Vacuum Gripper
+[2025-12-02 16:49:04] Picked Up Vacuum Gripper
+[2025-12-02 16:49:27] Remove Lid From Solvent
+[2025-12-02 16:49:42] Remove Lid From Samples
+[2025-12-02 16:49:50] Parked Vacuum Gripper
+[2025-12-02 16:49:59] Picked Up Spectrometer
+[2025-12-02 16:50:26] Spectrum recorded for vial A4 on Slot 2 at 35 mins
+[2025-12-02 16:50:49] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:50:59] Parked Spectrometer 
+[2025-12-02 16:51:07] Picked Up Spectrometer
+[2025-12-02 16:51:32] Spectrum recorded for vial B4 on Slot 2 at 35 mins
+[2025-12-02 16:51:56] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:52:05] Parked Spectrometer 
+[2025-12-02 16:52:16] Picked Up Vacuum Gripper
+[2025-12-02 16:52:32] Put Lid to Samples
+[2025-12-02 16:52:50] Put Lid to Solvent
+[2025-12-02 16:52:58] Parked Vacuum Gripper
+[2025-12-02 16:54:03] Picked Up Vacuum Gripper
+[2025-12-02 16:54:25] Remove Lid From Solvent
+[2025-12-02 16:54:40] Remove Lid From Samples
+[2025-12-02 16:54:48] Parked Vacuum Gripper
+[2025-12-02 16:54:57] Picked Up Spectrometer
+[2025-12-02 16:55:24] Spectrum recorded for vial A4 on Slot 2 at 40 mins
+[2025-12-02 16:55:48] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:55:57] Parked Spectrometer 
+[2025-12-02 16:56:06] Picked Up Spectrometer
+[2025-12-02 16:56:31] Spectrum recorded for vial B4 on Slot 2 at 40 mins
+[2025-12-02 16:56:54] Washed Spectrometer Probe 3 Times
+[2025-12-02 16:57:04] Parked Spectrometer 
+[2025-12-02 16:57:15] Picked Up Vacuum Gripper
+[2025-12-02 16:57:31] Put Lid to Samples
+[2025-12-02 16:57:49] Put Lid to Solvent
+[2025-12-02 16:57:57] Parked Vacuum Gripper
+[2025-12-02 16:59:02] Picked Up Vacuum Gripper
+[2025-12-02 16:59:24] Remove Lid From Solvent
+[2025-12-02 16:59:39] Remove Lid From Samples
+[2025-12-02 16:59:47] Parked Vacuum Gripper
+[2025-12-02 16:59:56] Picked Up Spectrometer
+[2025-12-02 17:00:23] Spectrum recorded for vial A4 on Slot 2 at 45 mins
+[2025-12-02 17:00:46] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:00:56] Parked Spectrometer 
+[2025-12-02 17:01:04] Picked Up Spectrometer
+[2025-12-02 17:01:30] Spectrum recorded for vial B4 on Slot 2 at 45 mins
+[2025-12-02 17:01:53] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:02:02] Parked Spectrometer 
+[2025-12-02 17:02:13] Picked Up Vacuum Gripper
+[2025-12-02 17:02:30] Put Lid to Samples
+[2025-12-02 17:02:48] Put Lid to Solvent
+[2025-12-02 17:02:56] Parked Vacuum Gripper
+[2025-12-02 17:04:00] Picked Up Vacuum Gripper
+[2025-12-02 17:04:22] Remove Lid From Solvent
+[2025-12-02 17:04:38] Remove Lid From Samples
+[2025-12-02 17:04:46] Parked Vacuum Gripper
+[2025-12-02 17:04:55] Picked Up Spectrometer
+[2025-12-02 17:05:22] Spectrum recorded for vial A4 on Slot 2 at 50 mins
+[2025-12-02 17:05:45] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:05:55] Parked Spectrometer 
+[2025-12-02 17:06:04] Picked Up Spectrometer
+[2025-12-02 17:06:29] Spectrum recorded for vial B4 on Slot 2 at 50 mins
+[2025-12-02 17:06:52] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:07:01] Parked Spectrometer 
+[2025-12-02 17:07:12] Picked Up Vacuum Gripper
+[2025-12-02 17:07:29] Put Lid to Samples
+[2025-12-02 17:07:47] Put Lid to Solvent
+[2025-12-02 17:07:55] Parked Vacuum Gripper
+[2025-12-02 17:09:00] Picked Up Vacuum Gripper
+[2025-12-02 17:09:22] Remove Lid From Solvent
+[2025-12-02 17:09:37] Remove Lid From Samples
+[2025-12-02 17:09:45] Parked Vacuum Gripper
+[2025-12-02 17:09:54] Picked Up Spectrometer
+[2025-12-02 17:10:22] Spectrum recorded for vial A4 on Slot 2 at 55 mins
+[2025-12-02 17:10:45] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:10:54] Parked Spectrometer 
+[2025-12-02 17:11:03] Picked Up Spectrometer
+[2025-12-02 17:11:28] Spectrum recorded for vial B4 on Slot 2 at 55 mins
+[2025-12-02 17:11:51] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:12:01] Parked Spectrometer 
+[2025-12-02 17:12:12] Picked Up Vacuum Gripper
+[2025-12-02 17:12:28] Put Lid to Samples
+[2025-12-02 17:12:46] Put Lid to Solvent
+[2025-12-02 17:12:55] Parked Vacuum Gripper
+[2025-12-02 17:13:59] Picked Up Vacuum Gripper
+[2025-12-02 17:14:21] Remove Lid From Solvent
+[2025-12-02 17:14:37] Remove Lid From Samples
+[2025-12-02 17:14:44] Parked Vacuum Gripper
+[2025-12-02 17:14:53] Picked Up Spectrometer
+[2025-12-02 17:15:21] Spectrum recorded for vial A4 on Slot 2 at 60 mins
+[2025-12-02 17:15:44] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:15:53] Parked Spectrometer 
+[2025-12-02 17:16:02] Picked Up Spectrometer
+[2025-12-02 17:16:27] Spectrum recorded for vial B4 on Slot 2 at 60 mins
+[2025-12-02 17:16:50] Washed Spectrometer Probe 3 Times
+[2025-12-02 17:17:00] Parked Spectrometer 
