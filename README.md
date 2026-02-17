@@ -1,17 +1,17 @@
-# Axo_MOF: Autonomous Self-Adaptive Bayesian Optimization for MOF Synthesis
+# Axo_MOF: A Reaction-Aware Autonomous Platform Co-Optimizing Formulation and Execution for ZIF Synthesis
 
 > **An automated Metal-Organic Framework (MOF) synthesis and optimization platform combining robotics, spectroscopy, and machine learning for autonomous materials discovery**
 
-Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis spectroscopy, and intelligent experiment planning through self-adaptive Bayesian optimization.
+Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis spectroscopy, and intelligent experiment planning.
 
 ---
 
 ## 🌟 Key Features
 
-### Self-Adaptive Bayesian Optimization
-- **2-phase progressive optimization**: Exploration → Refinement
+### Reaction-Aware Adaptive Execution
+- **2-mode progressive optimization**: Exploration → Refinement
 - **Adaptive batch sizing**: Large batches (5) for exploration, small batches (2) for refinement
-- **Dynamic search space**: Automatically narrows to promising regions
+- **Real time trigger**: Switch modes automatically when threshold met
 - **Flexible approval modes**: Manual (interactive) or automatic (fully autonomous)
 - **State persistence**: Resume interrupted runs from checkpoints
 
@@ -146,18 +146,18 @@ pip install jupyter
 
 ### Option 1: Command-Line Interface (Recommended for Production)
 
-**Multi-phase optimization with manual approval:**
+**optimization with manual approval:**
 ```bash
 cd Code
 python run_bo_optimization.py --new --approval-mode manual
 ```
 
-**Fully autonomous (automatic phase transitions):**
+**Fully autonomous (automatic mode transitions):**
 ```bash
 python run_bo_optimization.py --new --approval-mode automatic
 ```
 
-**Single-phase mode (traditional BO):**
+**traditional BO:**
 ```bash
 python run_bo_optimization.py --new --phases single --batch-size 5 --max-iterations 20
 ```
@@ -184,19 +184,17 @@ The notebook provides:
 
 ## 📖 Usage
 
-### Self-Adaptive Bayesian Optimization
+### Adaptive Execution
 
-The system runs through **two optimization phases**:
+The system runs through **two optimization modes**:
 
-| Phase | Goal | Batch Size | Measurement Interval (min) | Exploration (xi) | 
+| Mode | Goal | Batch Size | Measurement Interval (min) | Exploration (xi) | 
 |-------|------|------------|----------------------------|------------------|
 | **Exploration** | Broad screening | 5 | 15 | 0.01 | 
 | **Refinement** | Focused optimization | 2 | 5 | 0.01 | 
 
-**Phase Transition Criteria:**
+**Mode Transition Criteria:**
 - Performance threshold met (yield > threshold)
-- Expected improvement converged
-- Best k_n observed converged
 
 ### Command-Line Arguments
 
