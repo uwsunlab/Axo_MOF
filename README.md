@@ -1,35 +1,36 @@
-# Axo_MOF: A Reaction-Aware Autonomous Platform Co-Optimizing Formulation and Execution for ZIF Synthesis
+# Reaction-aware control of autonomous batch synthesis
 
-> **An automated Metal-Organic Framework (MOF) synthesis and optimization platform combining robotics, spectroscopy, and machine learning for autonomous materials discovery**
+> **Reaction-aware autonomous batch synthesis for ZIF-67 crystallization using robotic liquid handling, in situ UV–Vis spectroscopy, and adaptive Bayesian optimization**
 
-Built on a modified Jubilee 3D printer with integrated liquid handling, UV-Vis spectroscopy, and intelligent experiment planning.
+This repository contains the software, analysis workflows, and supporting assets for **Axo**, a modular autonomous platform for solution-phase batch synthesis. The platform integrates robotic reagent delivery, programmable tool changing, cyclic in situ UV–Vis measurements, kinetic model fitting, and reaction-aware Bayesian optimization to co-optimize **what formulation to test** and **how the experiment should be executed**.
 
 ---
 
 ## 🌟 Key Features
 
 ### Reaction-Aware Adaptive Execution
-- **2-mode progressive optimization**: Exploration → Refinement
-- **Adaptive batch sizing**: Large batches (5) for exploration, small batches (2) for refinement
-- **Real time trigger**: Switch modes automatically when threshold met
+- **Adaptive scheduling**: 
+  - **Throughput-prioritized exploration**: 5-vial batch, 15 min measurement interval
+  - **Measurement-prioritized refinement**: 2-vial batch, 5 min measurement interval
+- **Reaction-aware trigger**: Switch modes automatically when early reaction progress exceeds a threshold
 - **Flexible approval modes**: Manual (interactive) or automatic (fully autonomous)
 - **State persistence**: Resume interrupted runs from checkpoints
 
 ### Automated Synthesis & Characterization
 - **Robotic liquid handling**: Precise dispensing with single/dual syringe systems
-- **Real-time monitoring**: In-situ UV-Vis spectroscopy during synthesis
+- **In situ monitoring**: Cyclic UV–Vis spectroscopy integrated into the batch synthesis workflow
 - **Autonomous mixing**: Automated mixing and reaction control
-- **Multi-vial workflows**: Parallel synthesis of up to 20 samples
+- **Programmable multi-vial workflows**: Batch synthesis and cyclic monitoring across multiple reaction vials
 
 ### Intelligent Data Analysis
 - **Gualtieri kinetic fitting**: Automated MOF growth curve analysis
-- **Yield extraction**: Automatic I_max extraction from spectral time series
+- **Reaction-progress extraction**: Automatic extraction of extent of reaction `α(t)` and nucleation rate constant `k_n`
 - **Gaussian Process modeling**: Uncertainty-aware surrogate models
 - **Expected Improvement**: Efficient exploration-exploitation balance
 
 ### Production-Ready Engineering
-- **Comprehensive logging**: Detailed operation logs and experiment tracking
-- **Error recovery**: Graceful handling of failed fits (yield = 0.0)
+- **Comprehensive logging**: Experiment metadata, synthesis recipes, operation logs, reference spectra, and time-resolved UV–Vis outputs
+- **Error handling**: Graceful handling of excluded or failed fits (`no_reaction`, `no_target_feature`)
 - **Hardware safety**: Homing checks, collision avoidance, safe Z movements
 - **Configuration management**: JSON-based hardware and experiment configs
 
@@ -55,7 +56,7 @@ The platform is organized into **four main abstraction layers**:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Experiment Layer                         │
-│  High-level workflows, BO orchestration, yield extraction   │
+│  High-level workflows, BO orchestration, kinetic analysis   │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -177,7 +178,7 @@ jupyter notebook multi_phase_bo_orchestration.ipynb
 The notebook provides:
 - Step-by-step hardware initialization
 - Interactive configuration
-- Real-time progress monitoring
+- In situ monitoring
 - Built-in visualization and analysis
 
 ---
@@ -194,7 +195,7 @@ The system runs through **two optimization modes**:
 | **Refinement** | Focused optimization | 2 | 5 | 0.01 | 
 
 **Mode Transition Criteria:**
-- Performance threshold met (yield > threshold)
+- Switch from exploration to refinement when any sample reaches early reaction progress `α(t1) > 0.5`
 
 ### Command-Line Arguments
 
@@ -230,11 +231,11 @@ python run_bo_optimization.py --new --approval-mode manual --operator "Alice"
 # 1. Generate 5 initial samples (maximin sampling)
 # 2. Prompt you to load vials
 # 3. Run automated synthesis + spectroscopy
-# 4. Extract yields using Gualtieri fitting
+# 4. Extract kinetic descriptors using Gualtieri fitting
 # 5. Update GP model
-# 6. Enter exploration phase (5 vials)
+# 6. Enter exploration phase (5 vials, 15 min interval)
 # 7. Prompt for approval when criteria met
-# 8. Transition to refinement phase (2 vials)
+# 8. Transition to refinement phase (2 vials, 5 min interval)
 # 9. Converge and report optimal conditions
 ```
 
@@ -243,7 +244,7 @@ python run_bo_optimization.py --new --approval-mode manual --operator "Alice"
 See [multi_phase_bo_orchestration.ipynb](Code/multi_phase_bo_orchestration.ipynb) for:
 - Interactive hardware setup and calibration
 - Configuration with validation
-- Real-time progress visualization
+- Progress visualization
 - Post-optimization analysis and plotting
 
 ---
@@ -278,16 +279,21 @@ Axo_MOF/
 │   │       └── utils/
 │   │           └── synthesis_plan.py   # Experiment plan generation
 │   │
-│   ├── run_bo_optimization.py          # Main CLI entry point
-│   ├── multi_phase_bo_orchestration.ipynb  # Interactive notebook
+│   ├── bayesian.ipynb                  # BO analysis and visualization
+│   ├── draft_synthesis_plan.json       # Example synthesis-plan configuration
+│   ├── gualtieri.ipynb                 # Kinetic fitting workflow
 │   ├── mof_synthesis.ipynb             # Manual synthesis workflows
-│   ├── bayesian optimisation.ipynb     # BO analysis & visualization
+│   ├── multi_phase_bo_orchestration.ipynb  # Interactive orchestration notebook
+│   ├── run_bo_optimization.py          # Main CLI entry point
+│   └── sampling.ipynb                  # Initial/maximin sampling workflow
 |
 ├── Dataset/                            # Experimental data
 │   └── {experiment_name}_{timestamp}/
-│       ├── operations_log.txt
-│       ├── {vial}_{time}min.npy        # Spectral data
-│       └── {vial}_{time}min.png
+│       ├── references/                # Background/reference spectra
+│       ├── spectra/                   # Time-resolved spectral outputs
+│       ├── experiment_metadata.json   # Experiment-level metadata
+│       ├── mof_recipes.json           # Per-vial synthesis recipes
+│       └── operations_log.txt         # Chronological robotic execution log
 │
 └── README.md                           # This file
 ```
@@ -301,9 +307,9 @@ Axo_MOF/
 
 ### Example Notebooks
 - **[mof_synthesis.ipynb](Code/mof_synthesis.ipynb)**: Manual synthesis workflows and calibration
-- **[bayesian optimisation.ipynb](Code/bayesian%20optimisation.ipynb)**: BO analysis and visualization
-- **[spectra data and Gualtieri fitting.ipynb](Code/spectra%20data%20and%20Gualtieri%20fitting.ipynb)**: Spectral analysis
-
+- **[bayesian.ipynb](Code/bayesian.ipynb)**: BO analysis and visualization
+- **[gualtieri.ipynb](Code/gualtieri.ipynb)**: Spectral analysis and kinetic fitting
+- **[sampling.ipynb](Code/sampling.ipynb)**: Initial space-filling / maximin sampling
 ---
 
 ## 🧪 Testing
