@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1102020512.svg)](https://doi.org/10.5281/zenodo.19664269)
+
 # Reaction-aware control of autonomous batch synthesis
 
 > **Reaction-aware autonomous batch synthesis for ZIF-67 crystallization using robotic liquid handling, in situ UV–Vis spectroscopy, and adaptive Bayesian optimization**
